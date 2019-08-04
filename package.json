@@ -16,6 +16,8 @@
     "@angular/router": "8.2.0",
     "core-js": "2.6.9",
     "bootstrap":"*",
+    "ngx-bootstrap":"*",
+    "font-awesome":"*",
     "firebase": "6.3.4",
     "firebase-key": "2.0.2",
     "jquery": "3.4.1",
