@@ -1,0 +1,66 @@
+<div class="row">
+	<div class="col-md-6">
+		<table class="table table-hover table-responsive">
+			<tr *ngFor="let item of keys">
+				<td>{{item}}</td>
+				<td><input type="text" class="form-control"  [(ngModel)]="data[item]"></td>
+        <td>
+	<button class="btn btn-sm btn-danger" (click)="remove(item)"><i class="fa fa-trash"></i></button>
+</td>
+<td *ngIf="item.includes('id')">
+  <button class="btn btn-sm btn-success" (click)="generateId(item)"><i class="fa fa-id-card"></i></button>
+</td>
+        
+      </tr>
+          <tr>
+	<td>
+  <input type="text" class="form-control" [(ngModel)]="newKey">
+  </td>
+	<td>
+ <button class="btn btn-primary btn-sm" (click)="add()"> <i class="fa fa-plus"></i></button>
+  </td>
+</tr>    
+<tr>
+	
+	<td>
+  <button class="btn btn-success" (click)="save()"> <i class="fa  fa-save"></i> Save to fb</button>
+  </td>
+  
+	<td>
+  <button class="btn btn-danger" (click)="empty()"> <i class="fa  fa-trash"></i> Empty All</button>
+  </td>
+  
+</tr>
+      </table>
+
+    
+        </div>
+<div class="col-md-6">
+  <table class="table table-hover table-responsive">
+	<tr>
+		<td>
+<textarea readonly class="form-control" #result name="" id="result" cols="40" (click)="copy(result)" rows="15">{{data | json}}</textarea>
+    </td>
+	</tr>
+	<tr>
+		<td>
+<!-- <button class="btn btn-primary btn-lg" (click)="copy(result)"> <i class="fa fa-copy"></i></button> -->
+    </td>
+    <tr>
+		<td>
+<textarea readonly name="" class="form-control" id="sqlresult1" #sqlresult1 (click)="copy(sqlresult1)" cols="40" rows="10">{{sqlresult[0]}}</textarea>
+    </td>
+	</tr>
+	<tr>
+		<td>
+<!-- <button class="btn btn-primary btn-lg" (click)="copy(sqlresult1)"> <i class="fa fa-copy"></i></button> -->
+    </td>
+	</tr>
+
+
+</table>
+  
+      
+
+</div>
+      </div>
