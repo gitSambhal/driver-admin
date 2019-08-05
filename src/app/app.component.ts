@@ -52,26 +52,35 @@ export class AppComponent {
   ngOnInit() {
 
     this.driverData = {
-      driver_name: '',
-      driver_mobile: '',
-      driver_current_status: '',
-      driver_email: '',
-      fcm_token: '',
-      driver_address1: '',
-      driver_address2: '',
-      driver_image_url: '',
-      driver_id: '',
-    }
+  "driver_address1" : "j",
+  "driver_address2" : "t",
+  "driver_admin" : "",
+  "driver_average_ratings" : 4,
+  "driver_current_status" : "",
+  "driver_id" : "",
+  "driver_image" : "",
+  "driver_mobile" : "",
+  "driver_name" : ""
+}
+
 
 
     this.vehicleData = {
-      vehicle_name: '',
-      vehicle_type: '',
-      vehicle_number: '',
-      vehicle_status: '',
-      driver_vehicle_id: '',
-      driver_id: '',
-    }
+  "current_status": "Active",
+  "driver_id": "",
+  "driver_image": "",
+  "driver_mobile": "",
+  "driver_name": "",
+  "driver_vehicle_id": "",
+  "status_updated_time": "null",
+  "vehicle_document_insurance": "null",
+  "vehicle_document_pollution": "null",
+  "vehicle_document_rc": "null",
+  "vehicle_max_weight": "null",
+  "vehicle_name": "Two Wheeler",
+  "vehicle_number": "",
+  "vehicle_type": ""
+}
 
     this.keys['driver'] = Object.keys(this.driverData);
     this.keys['vehicle'] = Object.keys(this.vehicleData);
