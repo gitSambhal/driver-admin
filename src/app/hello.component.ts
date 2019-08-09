@@ -87,7 +87,7 @@ export class HelloComponent {
   save(){
     console.log(firebase)
     let id = '';
-    if(this.tableName == 'driver_vehicles') {
+    if(this.tableName.includes('vehicle')) {
       id = this.data['driver_vehicle_id']
     } else {
       id = this.data['driver_id']
