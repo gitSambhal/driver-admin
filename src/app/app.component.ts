@@ -52,12 +52,12 @@ export class AppComponent {
   ngOnInit() {
 
     this.driverData = {
-  "driver_address1" : "j",
-  "driver_address2" : "t",
-  "driver_admin" : "",
-  "driver_average_ratings" : 4,
-  "driver_current_status" : "",
   "driver_id" : "",
+  "driver_address1" : "driver_address1",
+  "driver_address2" : "driver_address2t",
+  "driver_admin" : "0",
+  "driver_average_ratings" : 4,
+  "driver_current_status" : "Active",
   "driver_image" : "",
   "driver_mobile" : "",
   "driver_name" : ""
@@ -72,11 +72,11 @@ export class AppComponent {
   "driver_mobile": "",
   "driver_name": "",
   "driver_vehicle_id": "",
-  "status_updated_time": "null",
-  "vehicle_document_insurance": "null",
-  "vehicle_document_pollution": "null",
-  "vehicle_document_rc": "null",
-  "vehicle_max_weight": "null",
+  "status_updated_time": "",
+  "vehicle_document_insurance": "",
+  "vehicle_document_pollution": "",
+  "vehicle_document_rc": "",
+  "vehicle_max_weight": "",
   "vehicle_name": "Two Wheeler",
   "vehicle_number": "",
   "vehicle_type": ""
