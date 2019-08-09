@@ -100,6 +100,7 @@ export class HelloComponent {
       alert('Connect to firebase first');
       return;
     }
+    if(!confirm(JSON.stringify({id,data:this.data}))) return;
     firebase.database().ref(this.tableName+'/'+id).set(this.data).then((resp)=>{
       console.log(resp);
       alert('Record added')
