@@ -20,7 +20,7 @@
     "font-awesome":"*",
     "firebase": "6.3.4",
     "firebase-key": "2.0.2",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "popper.js": "1.15.0",
     "rxjs": "6.5.2",
     "typescript": "3.5.3",
